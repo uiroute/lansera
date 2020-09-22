@@ -8,6 +8,7 @@ Live preview
 <br/>
 
 [Product Page](https://uiroute.com/product/bootstrap/lansera)
+[Demo Page] 
 
 ## Licensing
 
