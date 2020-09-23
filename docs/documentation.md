@@ -2,18 +2,15 @@
 
 Lansera is a free template for mobile apps created with Bootstrap 4. You can launch your app easy with our ready to use template.
 
-
-## Table of contents
-
-
-
 ## Demo
 
 Live preview 
 <br/>
-[Product Page](https://uiroute.com/product/lansera)
 
-## Usage
+[Product Page](https://uiroute.com/product/bootstrap/lansera)
+<br />
+
+[Demo Page](https://demo.uiroute.com/bootstrap/lansera) 
 
 ## Licensing
 
@@ -30,9 +27,6 @@ UiRoute [License](https://uiroute.github.io/licensing.html)
 
 <br/>
 
-## Pages
-
-- [ ] One Page App
 
 
 
