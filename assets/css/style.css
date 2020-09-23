@@ -58,6 +58,11 @@
     color: #eff1f5;
 }
 
+.dark-theme #theme-select {
+    background: #4F1D82;
+    color: #eff1f5;
+}
+
 h1,h2,h3, p {
     margin:0;
     padding:0;
@@ -164,7 +169,7 @@ main {
 }
 
 .img-appPresentation {
-    margin-top: 8rem;
+    margin-top: 10rem;
     max-width: 100%;
 }
 
@@ -415,6 +420,15 @@ main {
     background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+.select-container {
+    margin-top: 2rem;
+    font-family: "Poppins";
+}
+
+#theme-select {
+    padding: 1rem;
 }
 
 @media only screen and (min-width: 865px) {
