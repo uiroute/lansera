@@ -1,16 +1,20 @@
 // Main.js
 
 if(localStorage){
-    console.log(localStorage.getItem('theme'));
     if(localStorage.getItem('theme') === 'dark') {
+        $("#theme-select").val("dark");
         $(".page-container").addClass("dark-theme");
+
+    }
+    if(localStorage.getItem('theme') === 'light') {
+        $("#theme-select").val("light");
+        $(".page-container").removeClass("dark-theme");
     }
 }
 
-// $(".page-container").addClass("dark-theme");
+
 $("#theme-select").on("click", function() {
     let select = $( "#theme-select" ).val();
-    console.log(select)
     if (select === 'dark') {
         $(".page-container").addClass("dark-theme");
         localStorage.setItem('theme', select);
