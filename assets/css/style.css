@@ -12,75 +12,86 @@
  * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
  */
+ @font-face {
+    font-family: "Poppins";
+    src: url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+}
+
  
+:root {
+    --darkTheme-bg: #1b0234;
+    --darkTheme-text: #eff1f5;
+    --darkTheme-items: #4F1D82;
+}
+
 .dark-theme {
-    background: #1b0234;
+    background: var(--darkTheme-bg);
 }
 
 .dark-theme h2,
 .dark-theme h3,
 .dark-theme p {
-    color: #eff1f5;
+    color: var(--darkTheme-text);
 }
 
 .dark-theme nav ul li a,
 .dark-theme nav ul li a:hover {
-    color: #eff1f5;
+    color: var(--darkTheme-text);
 }
 .dark-theme .logo a {
-    color: #eff1f5;
+    color: var(--darkTheme-text);
 }
 
 .dark-theme .cta-nav-btn {
-    border: 1px solid #eff1f5;
+    border: 1px solid var(--darkTheme-text);
 }
 
 .dark-theme .section-tile {
-    background-color: #4F1D82;
+    background-color: var(--darkTheme-items);
 }
 
 .dark-theme .card-item {
-    background: #4F1D82;
+    background: var(--darkTheme-items);
 }
 .dark-theme .card-item:hover h3,
 .dark-theme .card-item:hover p{
-    color: #4F1D82!important;
+    color: var(--darkTheme-items)!important;
 }
 
 .dark-theme .get-started {
-    background: #4F1D82;
+    background: var(--darkTheme-items);
 }
 
 .dark-theme .card {
-    background: #4F1D82;
+    background: var(--darkTheme-items);
 }
 
 .dark-theme .card-body {
-    background: #4F1D82;
-    color: #eff1f5;
+    background: var(--darkTheme-items);
+    color: var(--darkTheme-text);
 }
 
 .dark-theme .btn-label {
-    color: #eff1f5;
+    color: var(--darkTheme-text);
 }
 
 .dark-theme .btn-body {
-    background: #eff1f5;
+    background: var(--darkTheme-text);
     color: #1b0234;
 
 }
 
 .dark-theme .github-icon {
-    color: #eff1f5;
+    color: var(--darkTheme-text);
 }
 
 .dark-theme .nav-btn i {
-    color: #eff1f5;
+    color: var(--darkTheme-text);
 }
 
 .dark-theme #theme-select {
-    background: #4F1D82;
-    color: #eff1f5;
+    background: var(--darkTheme-items);
+    color: var(--darkTheme-text);
 }
 
 h1,h2,h3, p {
@@ -114,6 +125,11 @@ h1 {
     letter-spacing: 0px;
     text-decoration: none;
   
+  }
+
+  nav {
+      margin-left: 2rem;
+      margin-right: 2rem;
   }
 
   nav ul {
@@ -252,8 +268,7 @@ main {
     background-color: #F9F7F2;
     padding: 3rem;
     border-radius: 1rem;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
     margin-left: 1rem;
     margin-right: 1rem;
 }
@@ -451,6 +466,17 @@ main {
     padding: 1rem;
 }
 
+@media screen and (max-width: 540px) {
+.ml-xl {
+    margin-left: 2rem;
+}
+
+.mr-xl {
+    margin-right: 2rem;
+}
+
+}
+
 @media only screen and (min-width: 865px) {
     .android-btn {
         margin-right: 2rem;
@@ -458,6 +484,10 @@ main {
     }
 
 @media screen and (max-width:864px) {
+    .title {
+        margin-top: 6rem;
+    }
+    
     .logo {
         padding: 0;
         margin-top: 12px;
