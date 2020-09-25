@@ -27,6 +27,7 @@
     --darkTheme-bg: #1b0234;
     --darkTheme-text: #eff1f5;
     --darkTheme-items: #4F1D82;
+    --font-family: "Poppins";
 }
 
 .dark-theme {
@@ -102,7 +103,7 @@
 h1,h2,h3, p {
     margin:0;
     padding:0;
-    font-family: 'Poppins';
+    font-family: var(--font-family);
 }
 
 h1 {
@@ -125,7 +126,7 @@ h1 {
     color: var(--primary-color);
     text-transform: uppercase;
     font-weight: 500;
-    font-family: 'Poppins';
+    font-family: var(--font-family);
     font-size: 20px;
     letter-spacing: 0px;
     text-decoration: none;
