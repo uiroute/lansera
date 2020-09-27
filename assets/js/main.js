@@ -21,7 +21,6 @@ const disableDarkTheme = () => {
 }
 
 themeSelector.addEventListener("click", () => {
-    console.log("merge");
     themeSelectorVal = document.getElementById("theme-select").value;
     if(themeSelectorVal === "dark") {
         enableDarkTheme();
