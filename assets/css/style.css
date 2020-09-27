@@ -463,6 +463,14 @@ main {
     -webkit-text-fill-color: transparent;
 }
 
+.android-btn {
+    width: 166px;
+}
+
+.apple-btn {
+    height: 44px;
+}
+
 .select-container {
     margin-top: 2rem;
     font-family: "Poppins";
