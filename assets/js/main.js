@@ -1,26 +1,32 @@
-// Main.js
+let darkTheme = localStorage.getItem("theme");
+const themeSelector = document.getElementById("theme-select");
+let themeSelectorVal = themeSelector.value;
 
-if(localStorage){
-    if(localStorage.getItem('theme') === 'dark') {
-        $("#theme-select").val("dark");
-        $(".page-container").addClass("dark-theme");
-
-    }
-    if(localStorage.getItem('theme') === 'light') {
-        $("#theme-select").val("light");
-        $(".page-container").removeClass("dark-theme");
-    }
+if(darkTheme === "dark") {
+    document.body.classList.add("dark-theme");
+    document.getElementById("theme-select").value = "dark";
+}
+else {
+    document.getElementById("theme-select").value = "light";
 }
 
+const enableDarkTheme = () => {
+    document.body.classList.add("dark-theme");
+    localStorage.setItem("theme", themeSelectorVal);
+}
 
-$("#theme-select").on("click", function() {
-    let select = $( "#theme-select" ).val();
-    if (select === 'dark') {
-        $(".page-container").addClass("dark-theme");
-        localStorage.setItem('theme', select);
+const disableDarkTheme = () => {
+    document.body.classList.remove("dark-theme");
+    localStorage.setItem("theme", themeSelectorVal);
+}
+
+themeSelector.addEventListener("click", () => {
+    console.log("merge");
+    themeSelectorVal = document.getElementById("theme-select").value;
+    if(themeSelectorVal === "dark") {
+        enableDarkTheme();
     }
-    if (select === 'light') {
-        $(".page-container").removeClass("dark-theme");
-        localStorage.setItem('theme', select)
+    if(themeSelectorVal ==="light") {
+        disableDarkTheme();
     }
 })
