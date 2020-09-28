@@ -21,7 +21,9 @@ const disableDarkTheme = () => {
 }
 
 themeSelector.addEventListener("click", () => {
+    console.log("click recorded")
     themeSelectorVal = document.getElementById("theme-select").value;
+    console.log(themeSelectorVal)
     if(themeSelectorVal === "dark") {
         enableDarkTheme();
     }
