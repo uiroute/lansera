@@ -20,7 +20,8 @@ const disableDarkTheme = () => {
     localStorage.setItem("theme", themeSelectorVal);
 }
 
-themeSelector.addEventListener("click", () => {
+
+const optionSelected = () => {
     themeSelectorVal = document.getElementById("theme-select").value;
     if(themeSelectorVal === "dark") {
         enableDarkTheme();
@@ -28,4 +29,4 @@ themeSelector.addEventListener("click", () => {
     if(themeSelectorVal ==="light") {
         disableDarkTheme();
     }
-})
+}
