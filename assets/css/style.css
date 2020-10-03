@@ -1,7 +1,7 @@
 /*!
 
  =========================================================
- * Lansera - v1.1.0
+ * Lansera - v1.2.3
  =========================================================
 
  * Product Page: https://uiroute.com/product/bootstrap/lansera
@@ -98,6 +98,12 @@
 .dark-theme #theme-select {
     background: var(--darkTheme-items);
     color: var(--darkTheme-text);
+}
+
+.dark-theme .card-item:hover {
+    background-color: #fff;
+    transform: scale(1.1); 
+    box-shadow: 7px 5px var(--darkTheme-items);
 }
 
 h1,h2,h3, p {
@@ -281,8 +287,9 @@ main {
 
 .card-item:hover {
     background-color: #fff;
-    border: 0.3rem solid var(--light-bg);
+    border: 0.2rem solid var(--light-bg);
     transform: scale(1.1); 
+    box-shadow: 7px 5px var(--light-bg);
 }
 
 .card-title {
