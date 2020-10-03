@@ -1,7 +1,7 @@
 /*!
 
  =========================================================
- * Lansera - v1.1.0
+ * Lansera - v1.2.3
  =========================================================
 
  * Product Page: https://uiroute.com/product/bootstrap/lansera
@@ -17,6 +17,7 @@
 	src: url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
 }
 &:root {
+	--white: #fff;
 	--light-bg: #F9F7F2;
 	--primary-color: #6c3aeb;
 	--fb-color: #4267B2;
@@ -70,6 +71,9 @@
 			p {
 				color: var(--darkTheme-items) !important;
 			}
+			background-color: var(--white);
+			transform: scale(1.1);
+			box-shadow: 7px 5px var(--darkTheme-items);
 		}
 	}
 	.get-started {
@@ -191,7 +195,7 @@ nav {
 	margin-top: 8px;
 	&:hover {
 		background: linear-gradient(90deg,#b13cff,#dd45d3 50%,#fd9d52);
-		color: #fff;
+		color: var(--white);
 		text-decoration: none;
 		border: transparent;
 	}
@@ -228,7 +232,7 @@ main {
 .section-tile {
 	margin-top: 10rem;
 	margin-bottom: 10rem;
-	background-color: #fff;
+	background-color: var(--white);
 	padding: 4rem;
 }
 .shadow {
@@ -276,9 +280,10 @@ main {
 	margin-left: 1rem;
 	margin-right: 1rem;
 	&:hover {
-		background-color: #fff;
-		border: 0.3rem solid var(--light-bg);
+		background-color: var(--white);
+		border: 0.2rem solid var(--light-bg);
 		transform: scale(1.1);
+		box-shadow: 7px 5px var(--light-bg);
 	}
 }
 .card-title {
@@ -329,7 +334,7 @@ main {
 .card-body {
 	font-family: "Poppins";
 	font-size: 1.6rem;
-	background-color: #fff;
+	background-color: var(--white);
 	padding-top: 2rem;
 	padding-bottom: 2rem;
 	padding-left: 5rem;
@@ -415,7 +420,7 @@ main {
 	color: var(--dribbble-color);
 }
 .twitter-icon {
-	color: var(--dribbble-color);
+	color: var(--twitter-color);
 }
 .github-icon {
 	color: #000;
@@ -424,6 +429,12 @@ main {
 	background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
+}
+.android-btn {
+	width: 166px;
+}
+.apple-btn {
+	height: 44px;
 }
 .select-container {
 	margin-top: 2rem;

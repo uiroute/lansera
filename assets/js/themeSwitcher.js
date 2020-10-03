@@ -1,3 +1,12 @@
+// =========================================================
+// * Lansera - Mobile App One Page Bootstrap 4 Template
+// =========================================================
+// * Product Page: https://uiroute.com/product/bootstrap/lansera
+// * Copyright 2020 UiRoute (https://www.uiroute.com)
+// * Coded by https://uiroute.com
+// =========================================================
+// * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. Contact us if you want to remove it.
+
 let darkTheme = localStorage.getItem("theme");
 const themeSelector = document.getElementById("theme-select");
 let themeSelectorVal = themeSelector.value;
